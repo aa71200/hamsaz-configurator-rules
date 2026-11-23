@@ -1,6 +1,6 @@
 # Hamsaz Configurator Rules
 
-A code sample from **Hamsaz**, CodexaWP's visual product configurator for WooCommerce. It demonstrates how a merchant-defined rule can block an incompatible bundle and how the engine responds when the catalogue lacks a required attribute.
+A product configurator needs to reject incompatible bundles and make missing catalogue data visible. This PHP sample shows how the **Hamsaz** evaluator handles both cases.
 
 ## Try it
 
