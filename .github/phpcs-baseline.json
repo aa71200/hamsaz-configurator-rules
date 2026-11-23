@@ -1,0 +1,55 @@
+{
+    "_comment": "Pre-existing findings from the portfolio review. Counts are limited to this file and sniff. Remove entries as code is corrected.",
+    "files": {
+        "examples/check.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceAfterArrayOpenerMultiLine": 1,
+            "ERROR NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceBeforeArrayCloserMultiLine": 1,
+            "ERROR NormalizedArrays.Arrays.CommaAfterLast.MissingMultiLineCloserSameLine": 1,
+            "ERROR PEAR.Functions.FunctionCallSignature.CloseBracketLine": 1,
+            "ERROR PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket": 1,
+            "ERROR PEAR.Functions.FunctionCallSignature.MultipleArguments": 2,
+            "ERROR Squiz.Commenting.FileComment.Missing": 1,
+            "ERROR Universal.Arrays.DisallowShortArraySyntax.Found": 52,
+            "ERROR WordPress.Arrays.ArrayDeclarationSpacing.ArrayItemNoNewLine": 7,
+            "ERROR WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound": 17,
+            "ERROR WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned": 1,
+            "ERROR WordPress.Security.EscapeOutput.ExceptionNotEscaped": 1,
+            "ERROR WordPress.Security.EscapeOutput.OutputNotEscaped": 6,
+            "ERROR WordPress.WP.GlobalVariablesOverride.Prohibited": 1,
+            "WARNING Generic.Formatting.MultipleStatementAlignment.NotSameWarning": 2,
+            "WARNING WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned": 16,
+            "WARNING WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents": 1,
+            "WARNING WordPress.WP.AlternativeFunctions.json_encode_json_encode": 2
+        },
+        "src/Evaluator.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR Squiz.Commenting.FileComment.Missing": 1,
+            "ERROR Squiz.Commenting.FunctionComment.Missing": 21,
+            "ERROR Squiz.Commenting.VariableComment.Missing": 2,
+            "ERROR WordPress.Files.FileName.InvalidClassFileName": 1,
+            "ERROR WordPress.Files.FileName.NotHyphenatedLowercase": 1,
+            "ERROR WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid": 2,
+            "ERROR WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase": 45,
+            "ERROR WordPress.PHP.YodaConditions.NotYoda": 23
+        },
+        "src/Units.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR Squiz.Commenting.ClassComment.Missing": 1,
+            "ERROR Squiz.Commenting.FileComment.Missing": 1,
+            "ERROR Squiz.Commenting.FunctionComment.MissingParamTag": 2,
+            "ERROR Squiz.Commenting.FunctionCommentThrowTag.Missing": 1,
+            "ERROR WordPress.Files.FileName.InvalidClassFileName": 1,
+            "ERROR WordPress.Files.FileName.NotHyphenatedLowercase": 1,
+            "ERROR WordPress.PHP.YodaConditions.NotYoda": 1
+        },
+        "src/Unknown.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR Squiz.Commenting.ClassComment.Missing": 1,
+            "ERROR Squiz.Commenting.FileComment.Missing": 1,
+            "ERROR Squiz.Commenting.FunctionComment.Missing": 1,
+            "ERROR WordPress.Files.FileName.InvalidClassFileName": 1,
+            "ERROR WordPress.Files.FileName.NotHyphenatedLowercase": 1
+        }
+    }
+}
