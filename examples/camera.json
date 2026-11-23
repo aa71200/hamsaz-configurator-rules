@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "title": "بستهٔ دوربین و ضبط",
+  "description": "نمونهٔ قابل‌ویرایش برای انتخاب دوربین، ضبط‌کننده و خدمات نصب.",
+  "locale": "fa",
+  "components": [
+    {
+      "id": "camera",
+      "label": "دوربین",
+      "min": 1,
+      "max": 16,
+      "productIds": []
+    },
+    {
+      "id": "recorder",
+      "label": "ضبط‌کننده",
+      "min": 1,
+      "max": 1,
+      "productIds": []
+    },
+    {
+      "id": "installation",
+      "label": "خدمت نصب",
+      "min": 0,
+      "max": 1,
+      "productIds": []
+    }
+  ],
+  "attributes": [
+    {
+      "id": "protocol",
+      "label": "پروتکل تصویر",
+      "type": "string",
+      "required": true,
+      "componentIds": [
+        "camera",
+        "recorder"
+      ]
+    },
+    {
+      "id": "channels",
+      "label": "تعداد کانال",
+      "type": "integer",
+      "required": true,
+      "componentIds": [
+        "recorder"
+      ]
+    }
+  ],
+  "mappings": {},
+  "rules": [
+    {
+      "id": "channel_capacity",
+      "severity": "hard",
+      "assert": {
+        "type": "compare",
+        "op": "lte",
+        "left": {
+          "type": "count",
+          "component": "camera"
+        },
+        "right": {
+          "type": "attribute",
+          "component": "recorder",
+          "attribute": "channels"
+        }
+      },
+      "code": "CHANNEL_CAPACITY"
+    }
+  ],
+  "questions": [],
+  "profiles": [],
+  "layout": {
+    "schemaVersion": 1,
+    "nodes": [
+      {
+        "id": "heading",
+        "type": "heading",
+        "content": "بستهٔ دوربین"
+      },
+      {
+        "id": "camera_block",
+        "type": "products",
+        "componentId": "camera"
+      },
+      {
+        "id": "recorder_block",
+        "type": "products",
+        "componentId": "recorder"
+      },
+      {
+        "id": "installation_block",
+        "type": "products",
+        "componentId": "installation"
+      },
+      {
+        "id": "count_block",
+        "type": "quantity"
+      },
+      {
+        "id": "status_block",
+        "type": "status"
+      },
+      {
+        "id": "details_block",
+        "type": "explanation"
+      },
+      {
+        "id": "summary_block",
+        "type": "summary"
+      },
+      {
+        "id": "purchase_block",
+        "type": "purchase"
+      }
+    ]
+  },
+  "settings": {
+    "mode": "both",
+    "allowSharing": true,
+    "allowSaving": true
+  }
+}
