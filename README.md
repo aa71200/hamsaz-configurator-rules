@@ -1,5 +1,7 @@
 # Hamsaz Configurator Rules
 
+[![Standalone PHP checks](https://github.com/aa71200/hamsaz-configurator-rules/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/aa71200/hamsaz-configurator-rules/actions/workflows/checks.yml)
+
 A product configurator needs to reject incompatible bundles and make missing catalogue data visible. This PHP sample shows how the **Hamsaz** evaluator handles both cases.
 
 ## Try it
