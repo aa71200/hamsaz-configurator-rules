@@ -20,6 +20,8 @@ php examples/check.php
 
 The fixture also checks the returned rule code and the exact subtotal in integer cents. A subtotal is informational; purchase eligibility comes from the rules.
 
+The independent PoE power-budget scenario covers exact watt conversion, a headroom warning, a hard budget limit, too many cameras, missing resource data and numeric overflow.
+
 ## Follow the code
 
 - [Camera definition](examples/camera.json) — the original camera-pack rule compares the number of cameras with the recorder's channel count.
